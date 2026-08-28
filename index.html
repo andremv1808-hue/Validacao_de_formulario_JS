@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FORMULARIO PARA INGRESSAR NO CLAN</h1>
+    <form class="container-primeiras-infos" id="form" novalidate>
+        <input type="text" name="nome" id="nome" placeholder="Nome no Clash Of Clans">
+        <span class="erro" id="erro-nome"></span>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+        <span class="erro" id="erro-email"></span>
+        <input type="text" name="numero" id="numero" placeholder="Telefone">
+        <span class="erro" id="erro-numero"></span>
+        <textarea name="texto" id="texto" placeholder="Por que deve entrar"></textarea>
+        <span class="erro" id="erro-texto"></span>
+        <p>QUAL SEU CENTRO DE VILA?</p>
+        <div class="container-checkbox">
+            <input type="radio" name="cv" value="cv1" id="radio" class="checkbox">
+            CV1
+            <input type="radio" name="cv" value="cv2" id="radio" class="checkbox">
+            CV2
+            <input type="radio" name="cv" value="cv3" id="radio" class="checkbox">
+            CV3
+            <input type="radio" name="cv" value="cv4" id="radio" class="checkbox">
+            CV4
+            <input type="radio" name="cv" value="cv5" id="radio" class="checkbox">
+            CV5
+            <input type="radio" name="cv" value="maior" id="radio" class="checkbox">
+            Maior
+        </div>
+        <span class="erro" id="erro-radio"></span>
+        <input type="text" name="curso" id="curso" placeholder="Seu curso na PUCPR">
+        <span class="erro" id="erro-curso"></span>
+        <p>VOCE ESTUDA NO BLOCO 05 (VERMELHO)?</p>
+        <div class="container-radio-button">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            sim
+        </div>
+        <p>Entao disserte sobre sua paixao pelo BLOCO 05 da pucpr</p>
+        <textarea name="textarea2" id="textarea2" placeholder="Disserte Aqui" disabled></textarea>
+        <span class="erro" id="erro-textarea2"></span>
+        <p>Selecione seu bloco</p>
+        <select name="select" id="select" disabled>
+            <option value="">Selecione uma opcao</option>
+            <option value="blocoverde">Bloco Verde</option>
+            <option value="blocoamarelo">Bloco Amarelo</option>
+            <option value="blocoazul">Bloco Azul</option>
+            <option value="blocopolit">Politecnico</option>
+        </select>
+        <span class="erro" id="erro-select"></span>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
